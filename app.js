@@ -20,6 +20,8 @@ fetch("https://fakestoreapi.com/products/")
       </div>`
     }
     shop.innerHTML = html
+    const collection = document.getElementsByClassName("price")
+    console.log(collection)
   })
   .catch((err) => {
     console.log(err)
