@@ -22,7 +22,13 @@ fetch("https://fakestoreapi.com/products/")
     shop.innerHTML = html
     const collection = document.getElementsByClassName("price")
     console.log(collection)
+
+    // TODO: when a user clicks on a price - it should trigger an alert that reads 'The price of this item is ${}'
   })
   .catch((err) => {
     console.log(err)
   })
+function alertMessage() {
+  const alert = document.getElementById("price").value
+  alert(`The price of this item is + ${price}`)
+}
